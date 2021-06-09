@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<% include ./partials/home_head%>
+
+    <body id="Index">
+
+        <script type="text/javascript">
+            $(document).ready(() => {
+                $('#masthead').removeClass("site-header");
+                $('#Proposals').addClass("active");
+            });
+        </script>
+
+        <% include ./partials/home_header %>
+            <!-- /#masthead -->
+
+            <div class="container" style="margin-top:100px;">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="well well-sm">
+                            <fieldset>
+                                <form class="form-horizontal" action="/portal/fileupload" method="post" enctype="multipart/form-data" onsubmit="formCheck();">
+
+                                    <a class="site-title yellow-text" class="section-title-big text-center">IDEA <span class="black-text">Submissions</span></a>
+
+                                    <div class="form-group">
+                                        <label class="col-md-9 control-label" id="ejs" style="font-size:12px;color:red;"><%=error%></label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label" for="name">Title</label>
+                                        <div class="col-md-9">
+                                            <input id="title" name="title" type="text" value="<%=title%>" placeholder="Enter the title of your project" class="form-control">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label" for="name">Name</label>
+                                        <div class="col-md-9">
+                                            <input id="name" name="name" type="text" placeholder="Your name" class="form-control" value="<%=name%>">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label" for="name">Registration number</label>
+                                        <div class="col-md-9">
+                                            <input id="roll" name="roll" type="text" placeholder="Your roll..." class="form-control">
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label" for="name">Mobile number:</label>
+                                        <div class="col-md-9">
+                                            <input id="mnum" name="mnum" type="text" placeholder="Your Mobile number..." class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <!--
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="name">Domain</label>
+                                <div class="col-md-9">
+                                    <input id="domain" name="domain" type="text" placeholder="Your domain..." class="form-control">
+                                </div>
+                            </div>-->
+
+
+
+                                    <!--
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="message">Abstract</label>
+                                <div class="col-md-7">
+                                    <textarea class="form-control" id="abstract" name="abstract" placeholder="Please enter your abstract here..." rows="3"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="message">Description</label>
+                                <div class="col-md-9">
+                                    <textarea class="form-control" id="description" name="descp" placeholder="Please enter your message here..." rows="5"></textarea>
+                                </div>
+                            </div>
+                        -->
+
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label" for="message">Upload Proposal</label>
+                                        <div class="col-md-9">
+                                            <input id="file" type="file" name="filetoupload" accept=".pdf" onchange="validate_fileupload();" ><br>
+                                            <div id="feedback" style="font-size:12px;color:red;"></div>
+                                            <p style="font-size:12px;color:red;">*Upload only in PDF format.</p>
+                                        </div>
+                                    </div>
+
+                                    
+
+                                    <!-- Form actions -->
+                                    <div class="form-group">
+                                        <div class="col-md-12 text-center">
+                                            <button class="w3-button w3-black" type="submit" class="btn btn-primary btn-lg" onclick="formCheck()">Submit</button>
+
+
+                                        </div>
+                                    </div>
+
+                                </form>
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <button onclick="window.location.href = 'http://nodetest321.herokuapp.com/pdf/format.pdf';" class="">Proposal Format</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+                function formCheck() {
+                    var n, r, y, d, a, des, f;
+                    var response;
+                    n = document.getElementById('name').value;
+                    r = document.getElementById('roll').value;
+                    d = document.getElementById('title').value;
+                    a = document.getElementById('mnum').value;
+                    f = document.getElementById('file').value;
+
+                    if (n == "" || r == '' || d == '' || a == '' || f == '' || !validate_fileupload()) {
+                        response = "*Please fill all the fields correctly.";
+                        event.preventDefault();
+                    } else {
+                        response = "";
+                    }
+
+                    document.getElementById('ejs').innerHTML = response;
+                }
+                function validate_fileupload(){
+                  var item = document.getElementById('file');
+                  var feedback = document.getElementById('feedback');
+                  var ext = item.value.split('.').pop();
+                  console.log(ext);
+                  if(ext=="pdf")
+                  {
+                    feedback.innerHTML="";
+                    return true;
+                  }
+                  feedback.innerHTML='*Only files with pdf extension is allowed';
+                  console.log(false);
+                  return false;
+                }
+            </script>
+
+
+            <section class="site-section-small section-work-with-us yellow-bg text-center">
+
+                <div class="container">
+
+                    <p class="section-title-small white-text mb-50">Coming together is a beginning, keeping together is progress, working together is success.</p>
+                    <a class="btn" href="ui-elements.html">Join Now</a>
+
+                </div>
+
+            </section>
+            <!-- /.section-work-with-us -->
+
+
+
+            </main>
+            <!-- /.site-main -->
+
+            <% include ./partials/home_footer.ejs%>
+
+    </body>
+
+</html>

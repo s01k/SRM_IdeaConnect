@@ -1,0 +1,23 @@
+{
+  "name": "pass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cookie-session": "^2.0.0-beta.3",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "formidable": "^1.2.1",
+    "g": "^2.0.1",
+    "nodemailer": "^5.1.1",
+    "nodemon": "^2.0.2",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

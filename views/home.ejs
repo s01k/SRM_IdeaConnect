@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<% include ./partials/home_head %>
+
+    <body>
+
+        <script type="text/javascript">
+            $(document).ready(() => {
+                $('#Home').addClass("active");
+            });
+        </script>
+
+        <% include ./partials/home_header %>
+            <!-- /#masthead -->
+
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <div class="w3-content w3-section" style="max-height:800px;max-width: 2000px">
+                <img class="mySlides" src="assets/img/good1.jpg" style="width:100%">
+                <img class="mySlides" src="assets/img/good2.jpg" style="width:100%">
+                <img class="mySlides" src="assets/img/good3.jpg" style="width:100%">
+            </div>
+
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {
+                        myIndex = 1
+                    }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(carousel, 3000); // Change image every 3 seconds
+                }
+            </script>
+
+
+
+
+            <main id="main" class="site-main">
+                <a class="site-title yellow-text">
+                    <center><b><br>Current Proposals</b></center>
+                </a>
+
+                <div class="container" id="announ" style=" margin-top: 15px;">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="well well-sm">
+                                <form class="form-horizontal" action="/portal/fileupload" method="post" enctype="multipart/form-data">
+                                    <fieldset>
+                                        <!--<legend>
+                                    <center><b>Announcements</b></center>
+                                </legend>
+
+                                <!-- Name input-->
+
+                                        <div class="form-group">
+                                            <div class="col-md-18">
+
+                                                <ul>
+                                                    <li>
+                                                        <span>Automation in Departmental/Educational Services</span><br>
+                                                        <a href="/currentProposal">Submit Proposals</a> , <a href="format.pdf">Proposal format</a></li><br>
+                                                    <!--<li><span>Title: TIMETABLE AUTOMATION</span><br><a href="/portal">Submit Proposals</a> , <a href="format.pdf">Proposal format</a></li><br>
+                                                <li><span>Title: STUDENT SKILL TRACKING</span><br><a href="/portal">Submit Proposals</a> , <a href="format.pdf">Proposal format</a></li><br>
+                                                <li><span>Title: VIRTUAL REALITY BASED TUTORIAL</span><br><a href="/portal">Submit Proposals</a> , <a href="format.pdf">Proposal format</a></li><br>
+                                                <li><span>Title: STUDENT ABROAD PROGRAM</span><br><a href="/portal">Submit Proposals</a> , <a href="format.pdf">Proposal format</a></li><br>
+                                                <li><span>Title: Lab Maintenance Portal</span><br><a href="/portal">Submit Proposals</a> , <a href="format.pdf">Proposal format</a></li><br>-->
+                                                </ul>
+
+                                            </div>
+                                        </div>
+
+
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="site-section section-works light-gray-bg text-center">
+
+                    <div class="container">
+
+                        <h2 class="section-title">Featured Works</h2>
+                        <p class="section-text"></p>
+
+                        <div class="multi-item-controls">
+                            <a class="left btn carousel-control" href="#threeSlidesSlider" data-slide="next"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                            <a class="right btn carousel-control" href="#threeSlidesSlider" data-slide="prev"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+                        <!-- /.multi-item-controls -->
+
+                    </div>
+
+
+
+                    <div class="container-fluid">
+
+                        <div class="row">
+
+                            <div class="col-md-12">
+
+                                <div class="carousel three-slides-slider multi-item-carousel slide" id="threeSlidesSlider">
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <div class="col-xs-6 col-sm-4">
+                                                <a class="portfolio-link">
+                                                    <img src="assets/img/a1.jpg" alt="" class="img-carousel">
+                                                    <div class="portfolio-info">
+                                                        <div class="portfolio-info-top">
+                                                            <h3>Sir. Jagadish Chandra Bose</h3>
+                                                        </div>
+                                                        <!-- /.portfolio-info-top -->
+                                                        <div class="portfolio-info-bottom">
+                                                            <p>Sir. Jagadish Chandra Bose has been the unsung hero of Radio Communication. He was the first to invent Mercury Coherer which was used in Marconi’s Radio receiver. And Marconi got all the credits
+                                                                for Radio communication.</p>
+                                                        </div>
+                                                        <!-- /.portfolio-info-bottom -->
+                                                    </div>
+                                                    <!-- /.portfolio-info  -->
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- /.item -->
+                                        <div class="item">
+                                            <div class="col-xs-6 col-sm-4">
+                                                <a class="portfolio-link">
+                                                    <img src="assets/img/a2.jpg" alt="" class="img-carousel">
+                                                    <div class="portfolio-info">
+                                                        <div class="portfolio-info-top">
+                                                            <h3>Homi Jehangir Bhabha</h3>
+                                                        </div>
+                                                        <!-- /.portfolio-info-top -->
+                                                        <div class="portfolio-info-bottom">
+                                                            <p>Bhabha’s first paper “The Absorption of Cosmic radiation” in 1933 earned him a three year Isaac Newton Studentship in 1934.</p>
+                                                        </div>
+                                                        <!-- /.portfolio-info-bottom -->
+                                                    </div>
+                                                    <!-- /.portfolio-info  -->
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- /.item -->
+                                        <div class="item">
+                                            <div class="col-xs-6 col-sm-4">
+                                                <a class="portfolio-link">
+                                                    <img src="assets/img/a3.jpg" alt="" class="img-carousel">
+                                                    <div class="portfolio-info">
+                                                        <div class="portfolio-info-top">
+                                                            <h3>Dr. APJ Abdul Kalam</h3>
+                                                        </div>
+                                                        <!-- /.portfolio-info-top -->
+                                                        <div class="portfolio-info-bottom">
+                                                            <p>He was the Project Director in ISRO to help develop India's first indigenous Satellite Launch Vehicle.</p>
+                                                        </div>
+                                                        <!-- /.portfolio-info-bottom -->
+                                                    </div>
+                                                    <!-- /.portfolio-info  -->
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- /.item -->
+                                    </div>
+                                    <!-- /.carousel-inner -->
+                                </div>
+                                <!-- /.multi-item-carousel -->
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+                <!-- /.section-works -->
+                
+
+                <section class="site-section-small section-counters light-gray-bg text-center">
+
+                    <div class="container-fluid">
+
+                        <h3 class="section-title">Statistics</h3>
+
+                        <div class="row">
+
+                            <div class="col-sm-3 col-xs-6 counter-line">
+                                <h4 class="small-title">IOT</h4>
+                                <p class="counter" data-to="0" data-speed="2000">0</p>
+                            </div>
+                            <!-- /.counter-item -->
+
+                            <div class="col-sm-3 col-xs-6 counter-line">
+                                <h4 class="small-title">Image Processing</h4>
+                                <p class="counter" data-to="0" data-speed="2000">0</p>
+                            </div>
+                            <!-- /.counter-item -->
+
+                            <div class="col-sm-3 col-xs-6 counter-line">
+                                <h4 class="small-title">Artificial Intelligence</h4>
+                                <p class="counter" data-to="0" data-speed="2000">0</p>
+
+                            </div>
+                            <!-- /.counter-item -->
+
+                            <div class="col-sm-3 col-xs-6 counter-line">
+                                <h4 class="small-title">Ideas</h4>
+                                <p class="counter" data-to="0" data-speed="2000">0</p>
+                            </div>
+                            <!-- /.counter-item -->
+
+                        </div>
+
+                    </div>
+
+                </section>
+                <!-- /.section-counters -->
+
+
+                <!-- /.site-footer -->
+                <% include ./partials/home_footer %>
+
+
+    </body>
+
+</html>

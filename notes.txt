@@ -1,0 +1,15 @@
+changed /portal route in index js to redirect to google forms instead of the idea submission portal
+
+changed login button on header to register with the link to google form in views/partials
+
+sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8080
+sudo iptables -t nat -L
+
+https://tinyurl.com/ideaconnect
+
+
+cd Idea*
+cd por*
+git pull upstream master
+pm2 restart 1
+cd

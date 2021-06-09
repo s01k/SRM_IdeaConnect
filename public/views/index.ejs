@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Home | IdeaConnect</title>
+
+    <meta name="description" content="IdeaConnect">
+    <meta name="author" content="Souvk Santra">
+    <meta name="keywords" content="html, css, twitter bootstrap, javascript, jquery, responsive">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Favicon
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
+
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="assets/css/colors.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="Index">
+
+    <header id="masthead" class="site-header-fill">
+
+        <nav id="primary-navigation" class="site-navigation">
+
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+
+                    <a href="home.html" class="site-title yellow-text">IDEA<span class="white-text">CONNECT</span></a>
+
+                </div>
+                <!-- /.navbar-header -->
+
+                <div class="main-menu" id="perfect-navbar-collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="active"><a href="/">Home</a></li>
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">About <i class="fa fa-angle-down hidden-xs" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/missionvission">Mission & Vision</a></li>
+                                <li><a href="/ulinks">Useful Links</a></li>
+                            </ul>
+                            <!-- /.dropdown-menu -->
+                        </li>
+                        <!-- /.dropdown -->
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Proposals <i class="fa fa-angle-down hidden-xs" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/currentProposal">Current Proposals</a></li>
+                                <li><a href="/portal">Submit Proposals</a></li>
+                            </ul>
+                            <!-- /.dropdown-menu -->
+                        </li>
+                        <!-- /.dropdown -->
+                        <!--
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Domains <i class="fa fa-angle-down hidden-xs" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu">
+
+                                <li><a href="#">Data Analytics and Security</a></li>
+                                <li><a href="#">Forensic Technologies</a></li>
+                                <li><a href="#">Computer and Network Security</a></li>
+                                <li><a href="#">Mobile and Internet Computing</a></li>
+                                <li><a href="#">Bio Computation</a></li>
+                                <li><a href="#">Software Defined Communication and Networking</a></li>
+                                <li><a href="#">Soft Computing</a></li>
+                                <li><a href="#">Biometrics and Bio Informatics</a></li>
+                                <li><a href="#">Data Mining</a></li>
+                                <li><a href="#">Artificial Intelligence & Machine Learning</a></li>
+                                <li><a href="#">Digital Image Processing</a></li>
+                                <li><a href="#">Security, Privacy and Trust Computing</a></li>
+                                <li><a href="#">Smart Sensor Networks</a></li>
+                                <li><a href="#">IOT And Cloud Computing</a></li>
+                                <li><a href="#">Smart Communication Society</a></li>
+                                <li><a href="#">Cyber Physical Systems</a></li>
+                                <li><a href="#">Service Oriented Architecture & Web Service</a></li>
+                                <li><a href="#">Natural Language Processing and Regional Language Computing</a></li>
+                                <li><a href="#">Parallel Computing</a></li>
+                            </ul>
+                            <!-- /.dropdown-menu --
+                        </li>
+                        <!-- /.dropdown -->
+
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Resources <i class="fa fa-angle-down hidden-xs" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/researchlab">Research Labs</a></li>
+
+                            </ul>
+                            <!-- /.dropdown-menu -->
+                        </li>
+                        <!-- /.dropdown -->
+                        <li>
+                            <a href="<%=link%>">
+                                <%=auth%>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <!-- /.navbar-nav -->
+
+                </div>
+                <!-- /.navbar-collapse -->
+
+            </div>
+
+        </nav>
+        <!-- /.site-navigation -->
+
+    </header>
+    <!-- /#masthead -->
+
+    <div class="container" style="margin-top:100px;">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="well well-sm">
+                    <form class="form-horizontal" action="/portal/fileupload" method="post" enctype="multipart/form-data">
+                        <fieldset>
+                            <a class="site-title yellow-text" class="section-title-big text-center">IDEA <span class="black-text">Submissions</span></a>
+
+                            <div class="form-group">
+                                <label class="col-md-9 control-label" id="ejs"><%=error%></label>
+                              </div>
+
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="name">Title</label>
+                                <div class="col-md-9">
+                                    <input id="title" name="title" type="text" value="<%=title%>" placeholder="Enter the title of your project" class="form-control">
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="name">Name</label>
+                                <div class="col-md-9">
+                                    <input id="name" name="name" type="text" placeholder="Your name" class="form-control" value="<%=name%>">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="name">Registration number</label>
+                                <div class="col-md-9">
+                                    <input id="roll" name="roll" type="text" placeholder="Your roll..." class="form-control">
+                                </div>
+                            </div>
+
+                            
+
+                            
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="name">Mobile number:</label>
+                                <div class="col-md-9">
+                                    <input id="mnum" name="mnum" type="text" placeholder="Your Mobile number..." class="form-control">
+                                </div>
+                            </div>
+
+                            <!--
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="name">Domain</label>
+                                <div class="col-md-9">
+                                    <input id="domain" name="domain" type="text" placeholder="Your domain..." class="form-control">
+                                </div>
+                            </div>-->
+
+                            
+
+                            <!--
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="message">Abstract</label>
+                                <div class="col-md-7">
+                                    <textarea class="form-control" id="abstract" name="abstract" placeholder="Please enter your abstract here..." rows="3"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="message">Description</label>
+                                <div class="col-md-9">
+                                    <textarea class="form-control" id="description" name="descp" placeholder="Please enter your message here..." rows="5"></textarea>
+                                </div>
+                            </div>
+                        -->
+
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="message">Upload Proposal</label>
+                                <div class="col-md-9">
+                                    <input id="file" type="file" name="filetoupload"><br>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-9 control-label" id="ejs"></label>
+                            </div>
+
+                            <!-- Form actions -->
+                            <div class="form-group">
+                                <div class="col-md-12 text-right">
+                                    <button type="submit" class="btn btn-primary btn-lg" onclick="formCheck()">Submit</button>
+                                </div>
+                                
+                            </div>
+                        </fieldset>
+                    </form>
+                    
+                    <button onclick="window.location.href = 'http://nodetest321.herokuapp.com/pdf/format.pdf';">Proposal Format</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function formCheck() {
+            var n, r, y, d, a, des, f;
+            var response;
+            n = document.getElementById('name').value;
+            r = document.getElementById('roll').value;
+            y = document.getElementById('year').value;
+            d = document.getElementById('domain').value;
+            a = document.getElementById('abstract').value;
+            des = document.getElementById('description').value;
+            f = document.getElementById('file').value;
+
+
+            if (n == "" || r == '' || y == '' || d == '' || a == '' || des == '' || f == '') {
+                response = "*Please fill all the inputs.";
+                event.preventDefault();
+            } else {
+                response = "";
+            }
+
+            document.getElementById('ejs').innerHTML = response;
+        }
+    </script>
+
+
+    <section class="site-section-small section-work-with-us yellow-bg text-center">
+
+        <div class="container">
+
+            <p class="section-title-small white-text mb-50">Coming together is a beginning, keeping together is progress, working together is success.</p>
+            <a class="btn" href="ui-elements.html">Join Now</a>
+
+        </div>
+
+    </section>
+    <!-- /.section-work-with-us -->
+
+
+
+    </main>
+    <!-- /.site-main -->
+
+    <footer id="colophon" class="site-footer">
+
+        <div class="container">
+
+            <div class="email">
+                <a href="mailto:infodesk@srmist.edu.in">infodesk@srmist.edu.in</a>
+            </div>
+            <!-- /.email -->
+
+
+
+
+
+        </div>
+
+        </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2019 SRM IdeaConnect | Made by <a href="http://exouvik.blogspot.com/" class="yellow-text">Souvik Santra</a></p>
+        </div>
+        <!-- /.copyright -->
+
+    </footer>
+    <!-- /.site-footer -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/touchswipe.min.js"></script>
+    <script src="assets/js/skrollr.min.js"></script>
+    <script src="assets/js/jquery.countTo.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

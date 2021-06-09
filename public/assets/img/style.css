@@ -1,0 +1,90 @@
+.footer a
+{
+  text-decoration-style: none;
+  text-decoration: none;
+  color: #555;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10rem;
+  background: #00FFFF;
+  border-top: 2px;
+  border-color: #E7E7E7;
+  padding: 10rem;
+
+}
+#ejs
+{
+  font-weight: normal;
+  color:red;
+}
+p1
+{
+  text-align: center;
+}
+.bg1
+{
+  background-image: url(it.jpeg);
+  background-blend-mode: luminosity;
+  background-repeat: inherit;
+  margin:0px;
+}
+.bg2
+{
+  box-align: center;
+  margin: 0px;
+  background-image: url(srm.png);
+  padding: 20px;
+  opacity: 0.8;
+}
+.heading
+{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+  color:rgb(146, 197, 155);
+}
+.bottom
+{
+  display: inline;
+  height: 70px;
+  width:200px;
+  padding: 20px;
+  margin: 50px;
+  background-color: #dcedda;
+  opacity: 1 ;
+  color: #ff3d43;
+
+}
+.bottom:hover
+{ background-color:black;
+  color: white;
+  opacity: 0.5;
+}
+.News{
+  color: #42425e;
+}
+.navbar-nav
+{
+  font-size: 20px;
+}
+.navbar-nav li a
+{
+  /*color: white;*/
+}
+.engaged
+{
+
+}
+#menubar:hover
+{
+  border-bottom: 2px black solid;
+}
+.navbar
+{
+
+}
+.nav .navbar-nav .navbar-left{text-weight:40px; padding: 0;margin: 0;}
